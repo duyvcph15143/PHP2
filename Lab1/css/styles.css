@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+}
+li{
+    list-style: none;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+}
+ul, p {
+    margin-bottom: 0;
+}
+header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9990;
+}
+.nav{
+    background-color: black;
+}
+.nav ul{
+    display: flex;
+    padding: 10px;
+}
+.nav ul li a{
+    color: white;
+    padding: 10px;
+}
+.nav ul li a:hover{
+    background-color: rgb(99, 99, 99);
+}
+main{
+    margin: 20px 0;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
