@@ -3,10 +3,10 @@
 
 <!-- Truyền giá trị cho những phần thay đổi -->
 <!-- yield(tên)  ~ section(tên, giá trị) -->
-<?php $this->startSection('title', 'Thêm sản phẩm'); ?>
+<?php $this->startSection('title', 'Tạo mới sản phẩm'); ?>
 
 <!-- yield(tên) ~ section(tên) nội dung endsection -->
-<?php $this->startSection('content-title', 'Thêm sản phẩm'); ?>
+<?php $this->startSection('content-title', 'Tạo mới sản phẩm'); ?>
 <?php $this->startSection('content'); ?>
 
 <!-- Với blade -->
@@ -49,7 +49,7 @@
  <br>
  <input type="text" name="price">
  <pre></pre>
- <label for="">Categories</label>
+ <label for="">Category</label>
  <br>
  <select name="category_id">
  <option value="">Áo</option>

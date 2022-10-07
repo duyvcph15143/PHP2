@@ -3,16 +3,20 @@
 // Sử dụng thư viện Phroute
 use Phroute\Phroute\RouteCollector;
 use App\Controllers\ProductController;
+use App\Controllers\DashboardController;
+
 // Khởi tạo đối tượng quản lý danh sách cách đường dẫn
 $router = new RouteCollector();
 // phương thức: get, post, put, patch, delete, any
 
 // $router->phuong_thuc('duong dan', function () {return xxx;});
-$router->get('/', function () {
-    return 'Trang chu';
-});
+// $router->get('/', function () {
+//     return 'Trang chu';
+// });
 
 // $router->phuong_thuc('duong dan', [Controller, 'ten ham']);
+$router->get('/', [DashboardController::class, 'getDashboards']);
+$router->get('/dashboard', [DashboardController::class, 'getDashboards']);
 $router->get('/ds-san-pham', [ProductController::class, 'getProducts']);
 $router->get('/them-san-pham', [ProductController::class, 'createProduct']);
 $router->get('/chi-tiet-san-pham', [ProductController::class, 'getProduct']);

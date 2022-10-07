@@ -3,10 +3,10 @@
 
 <!-- Truyền giá trị cho những phần thay đổi -->
 <!-- yield(tên)  ~ section(tên, giá trị) -->
-@section('title', 'Thêm sản phẩm')
+@section('title', 'Tạo mới sản phẩm')
 
 <!-- yield(tên) ~ section(tên) nội dung endsection -->
-@section('content-title', 'Thêm sản phẩm')
+@section('content-title', 'Tạo mới sản phẩm')
 @section('content')
 
 <!-- Với blade -->
@@ -49,7 +49,7 @@
         <br>
         <input type="text" name="price">
         <pre></pre>
-        <label for="">Categories</label>
+        <label for="">Category</label>
         <br>
         <select name="category_id">
             <option value="">Áo</option>
